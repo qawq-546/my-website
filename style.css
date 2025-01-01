@@ -214,6 +214,39 @@ h1:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
+.signature {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.signature:hover {
+    transform: translateY(-2px);
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.developer {
+    background: linear-gradient(90deg, #ff6b6b, #ffd93d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
 @keyframes rotate {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -342,5 +375,16 @@ h1:hover {
     .counter-wrapper {
         width: 150px;
         height: 150px;
+    }
+    
+    .signature {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+        bottom: 15px;
+        left: 15px;
+    }
+    
+    .developer {
+        font-size: 0.9rem;
     }
 }
